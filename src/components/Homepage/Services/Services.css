@@ -1,0 +1,76 @@
+.service-bg {
+    background-image: url('../../../images/paint-service-bg.jpg');
+    height: 1000px;
+    position: absolute;
+    width: 100%;
+    top: 1700px;
+    background-repeat: no-repeat;
+}
+.service-text{
+    color: rgb(242, 104, 0);
+    font-size: 35px;
+    
+}
+
+.main-container{
+    padding: 100px;
+}
+.swip-container{
+margin-top: 10px;
+}
+.swip-img{
+    border-radius: 10px;
+    border: 10px solid white;
+    transition: transform .2s;
+}
+.swip-img:hover{
+    transform: scale(1.01);
+    /* border: none; */
+}
+.logo{
+    width: 80px;
+    padding: 5px;
+    border-radius: 50%;
+    background-color: white;
+   margin-left: 110px;
+    position: relative;
+    bottom: 200px;
+}
+.swip-p{
+    color: rgb(242, 104, 0);
+    font-size: 25px;
+    text-align: center;
+    width: 250px;
+    background-color: white;
+    border-radius: 10px;
+    position: relative;
+    bottom: 150px;
+    margin-left: 20px;
+}
+
+@media screen  and (max-width:640px) {
+    .main-container{
+        padding:50px 0;
+    }
+    .mySwiper{
+        width: 300px;
+      
+    }
+}
+
+
+@media screen and (min-width:641px) and (max-width:768px) {
+    .space{
+        margin-top: 500px;
+    }
+}
+
+
+@media screen and (min-width:769px) and (max-width:1024px) {
+    .space{
+        margin-top: 600px;
+    }
+    .swip-p{
+        width: 260px;
+    }
+}

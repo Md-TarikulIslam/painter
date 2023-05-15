@@ -3,6 +3,7 @@ import img1 from "../../../images/paint-slider-1.jpg";
 import img2 from "../../../images/paint-slider-2.jpg";
 import { FaArrowRight } from "react-icons/fa";
 import "./Carousel.css";
+import Needs from "../Needs/Needs";
 const Carousel = () => {
   return (
     <div>
@@ -61,15 +62,13 @@ const Carousel = () => {
               ❯
             </a>
           </div>
-          
         </div>
-        
       </div>
       <div className="flex justify-center pills w-full py-2 gap-2">
-  <a href="#slide1" className="pill"></a> 
-  <a href="#slide2" className="pill"></a> 
-
-</div>
+        <a href="#slide1" className="pill"></a>
+        <a href="#slide2" className="pill"></a>
+      </div>
+      <Needs></Needs>
     </div>
   );
 };

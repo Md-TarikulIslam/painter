@@ -51,7 +51,7 @@
 }
 
 .learn-btn {
-margin-top: 50px;
+    margin-top: 50px;
     display: flex;
     align-items: center;
     background-color: rgb(242, 104, 0);
@@ -63,42 +63,51 @@ margin-top: 50px;
     border-radius: 50px;
     height: 80px;
 }
-.pill{
+
+.pill {
     display: none;
 }
 
-@media screen and (max-width:640px){
- 
-    .carousel-text{
+@media screen and (max-width:640px) {
+
+    .carousel-text {
         margin: 50px 0 0 50px;
     }
-    .main-text{
+
+    .main-text {
         font-size: 40px;
         width: 350px;
         line-height: 50px;
     }
-    .learn-btn{
+
+    .learn-btn {
         width: 200px;
     }
-    .buttonprev, .buttonnext{
-      display: none;
+
+    .buttonprev,
+    .buttonnext {
+        display: none;
     }
-    .learn-btn{
+
+    .learn-btn {
         margin-top: 20px;
     }
-    .pills{
+
+    .pills {
         position: relative;
         bottom: 40px;
     }
-    .pill{
+
+    .pill {
         display: block;
         width: 40px;
         padding: 5px;
         background-color: rgb(255, 166, 0);
         border-radius: 5px;
     }
-    .pill:active{
+
+    .pill:active {
         width: 70px;
     }
- 
+
 }

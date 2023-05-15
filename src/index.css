@@ -11,6 +11,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
@@ -21,5 +22,19 @@ code {
   src: local("Satoshi-Black"),
    url("./font/Satoshi-Black.otf") format("truetype");
   font-weight: 400;
+ }
+ 
+@font-face {
+  font-family: "Satoshi-Regular";
+  src: local("Satoshi-Regular"),
+   url("./font/Satoshi-Regular.otf") format("truetype");
+  font-weight: 400;
+ }
+ 
+@font-face {
+  font-family: "Satoshi-Light";
+  src: local("Satoshi-Light"),
+   url("./font/Satoshi-Light.otf") format("truetype");
+  font-weight: 200;
  }
  
