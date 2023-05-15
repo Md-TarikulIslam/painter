@@ -6,37 +6,43 @@
     top: 1700px;
     background-repeat: no-repeat;
 }
-.service-text{
+
+.service-text {
     color: rgb(242, 104, 0);
     font-size: 35px;
-    
+
 }
 
-.main-container{
+.main-container {
     padding: 100px;
 }
-.swip-container{
-margin-top: 10px;
+
+.swip-container {
+    margin-top: 10px;
 }
-.swip-img{
+
+.swip-img {
     border-radius: 10px;
     border: 10px solid white;
     transition: transform .2s;
 }
-.swip-img:hover{
+
+.swip-img:hover {
     transform: scale(1.01);
-    /* border: none; */
+
 }
-.logo{
+
+.logo {
     width: 80px;
     padding: 5px;
     border-radius: 50%;
     background-color: white;
-   margin-left: 110px;
+    margin-left: 110px;
     position: relative;
     bottom: 200px;
 }
-.swip-p{
+
+.swip-p {
     color: rgb(242, 104, 0);
     font-size: 25px;
     text-align: center;
@@ -48,29 +54,53 @@ margin-top: 10px;
     margin-left: 20px;
 }
 
-@media screen  and (max-width:640px) {
-    .main-container{
-        padding:50px 0;
+.company{
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    padding: 70px;
+  
+}
+.company-img{
+    transition: transform .2s;
+}
+.company-img:hover{
+    transform: scale(1.05);
+}
+
+@media screen and (max-width:640px) {
+    .main-container {
+        padding: 50px 0;
     }
-    .mySwiper{
+
+    .mySwiper {
         width: 300px;
-      
+
+    }
+    .company{
+        grid-template-columns: repeat(1,1fr);
     }
 }
 
 
 @media screen and (min-width:641px) and (max-width:768px) {
-    .space{
+    .space {
         margin-top: 500px;
+    }
+    .company{
+        grid-template-columns: repeat(2,1fr);
     }
 }
 
 
 @media screen and (min-width:769px) and (max-width:1024px) {
-    .space{
+    .space {
         margin-top: 600px;
     }
-    .swip-p{
+
+    .swip-p {
         width: 260px;
+    }
+    .company{
+        grid-template-columns: repeat(3,1fr);
     }
 }

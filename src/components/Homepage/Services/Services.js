@@ -8,6 +8,8 @@ import "swiper/css/pagination";
 import "swiper/css/autoplay";
 
 import data from "./fakedata";
+import newData from "./fakedata2";
+import Form from "../Form/Form";
 const Services = () => {
   return (
     <div>
@@ -20,7 +22,7 @@ const Services = () => {
         </div>
         <div data-aos="fade-up" className="main-container">
           <Swiper
-          navigation={true}
+            navigation={true}
             modules={[Pagination, Navigation, Autoplay, FreeMode]}
             freeMode={true}
             breakpoints={{
@@ -49,7 +51,6 @@ const Services = () => {
             pagination={{
               clickable: true,
             }}
-         
             className="mySwiper "
           >
             {data.map((d) => (
@@ -62,6 +63,14 @@ const Services = () => {
           </Swiper>
         </div>
       </div>
+      <div  data-aos="fade-up" className="company">
+        {newData.map((data) => (
+          <div>
+            <img className="company-img" src={data.image} alt="" />
+          </div>
+        ))}
+      </div>
+      <Form></Form>
     </div>
   );
 };
