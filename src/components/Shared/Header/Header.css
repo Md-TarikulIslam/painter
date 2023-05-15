@@ -1,0 +1,37 @@
+@media screen and (max-width:640px) {
+    .drop {
+        position: relative;
+        left: 320px;
+    }
+
+    .drop-2 {
+        position: relative;
+        left: 200px;
+        top: 50px;
+    }
+}
+
+@media screen and (min-width:641px) and (max-width:768px){
+    .drop {
+        position: relative;
+        left: 550px;
+    }
+
+    .drop-2 {
+        position: relative;
+        left: 420px;
+    }
+}
+
+@media screen and (min-width:769px) and (max-width:1024px){
+    .drop {
+        position: relative;
+        left: 800px;
+    }
+
+    .drop-2 {
+        position: relative;
+        left: 680px;
+    }
+
+}
