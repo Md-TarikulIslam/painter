@@ -12,3 +12,40 @@
 .foo-head{
     font-size: 30px;
 }
+.email-field{
+    margin-top: 30px;
+    padding: 20px 60px;
+    border-radius: 50px;
+}
+.sub{
+    margin-top: 30px;
+    width: 280px;
+    padding: 20px 60px;
+    text-align: center;
+    background-color: white;
+    color: #c0c5cc;
+    border-radius: 50px;
+}
+
+@media screen and (max-width:640px) {
+    .foo{
+        padding: 50px;
+    }
+.foo-flex{
+    flex-direction: column;
+}
+}
+
+@media screen and (min-width:641px) and (max-width:768px) {
+
+.foo-flex{
+    flex-direction: column;
+}
+}
+
+@media screen and (min-width:769px) and (max-width:1024px) {
+
+    .foo-flex{
+        flex-direction: column;
+    }
+}

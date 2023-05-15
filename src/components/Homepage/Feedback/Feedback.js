@@ -3,6 +3,7 @@ import "./Feedback.css";
 import img from "../../../images/Agreement-01-256.png";
 import img2 from '../../../images/Quotation-Marks-342.png'
 import allData from "./fakedata";
+import Article from "../Article/Article";
 
 const Feedback = () => {
   return (
@@ -15,7 +16,7 @@ const Feedback = () => {
             Opinions from our happy customers.
           </p>
         </div>
-        <div className="feedback-grid">
+        <div data-aos="fade-right" className="feedback-grid">
           {allData.map((data) => (
             <div className="feedback-card glass">
               <h1 className="fontlight feed-title">{data.title}</h1>
@@ -26,6 +27,7 @@ const Feedback = () => {
           ))}
         </div>
       </div>
+      <Article></Article>
     </div>
   );
 };
