@@ -1,25 +1,28 @@
-.foo{
+.foo {
     background-color: #f38128;
     /* height: 200px; */
     color: white;
     padding: 100px;
 }
 
-.foo-flex{
+.foo-flex {
     display: flex;
     justify-content: space-between;
 }
-.foo-head{
+
+.foo-head {
     font-size: 30px;
 }
-.email-field{
+
+.email-field {
     margin-top: 30px;
     padding: 20px 60px;
     border-radius: 50px;
 }
-.sub{
+
+.sub {
     margin-top: 30px;
-    width: 280px;
+    width: 285px;
     padding: 20px 60px;
     text-align: center;
     background-color: white;
@@ -28,24 +31,26 @@
 }
 
 @media screen and (max-width:640px) {
-    .foo{
+    .foo {
         padding: 50px;
     }
-.foo-flex{
-    flex-direction: column;
-}
+
+    .foo-flex {
+        flex-direction: column;
+    }
+   
 }
 
 @media screen and (min-width:641px) and (max-width:768px) {
 
-.foo-flex{
-    flex-direction: column;
-}
+    .foo-flex {
+        flex-direction: column;
+    }
 }
 
 @media screen and (min-width:769px) and (max-width:1024px) {
 
-    .foo-flex{
+    .foo-flex {
         flex-direction: column;
     }
 }

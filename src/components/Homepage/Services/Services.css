@@ -68,6 +68,9 @@
 }
 
 @media screen and (max-width:640px) {
+    .space{
+        margin-top: 300px;
+    }
     .main-container {
         padding: 50px 0;
     }
@@ -78,6 +81,9 @@
     }
     .company{
         grid-template-columns: repeat(1,1fr);
+    }
+    .company-img{
+        margin-left: 20px;
     }
 }
 

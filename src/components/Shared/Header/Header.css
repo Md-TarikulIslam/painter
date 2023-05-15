@@ -1,13 +1,34 @@
+.stick{
+    position: fixed;
+    top: 0;
+    z-index: 999;
+}
+.call{
+   
+    display: flex;
+    align-items: center;
+    padding: 15px 25px;
+    background-color: rgb(242, 104, 0);
+    color: white;
+    border-radius: 30px;
+    letter-spacing: 5px;
+}
 @media screen and (max-width:640px) {
     .drop {
         position: relative;
-        left: 320px;
+        left: 300px;
     }
 
     .drop-2 {
         position: relative;
-        left: 200px;
+        left: 180px;
         top: 50px;
+    }
+    .call{
+        display: none;
+    }
+    .stick{
+        position: inherit;
     }
 }
 
@@ -21,6 +42,9 @@
         position: relative;
         left: 420px;
     }
+    .call{
+        display: none;
+    }
 }
 
 @media screen and (min-width:769px) and (max-width:1024px){
@@ -32,6 +56,9 @@
     .drop-2 {
         position: relative;
         left: 680px;
+    }
+    .call{
+        /* display: none; */
     }
 
 }

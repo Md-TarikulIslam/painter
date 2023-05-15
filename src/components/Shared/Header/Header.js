@@ -1,10 +1,11 @@
 import React from "react";
-import './Header.css'
+import "./Header.css";
+import { HiPhoneIncoming } from "react-icons/hi";
 
 const Header = () => {
   return (
     <div>
-      <div className="navbar bg-base-100 lg:px-36 ">
+      <div className="navbar bg-base-100 lg:px-36 stick">
         <div className="navbar-start">
           <div className="dropdown">
             <label tabIndex={0} className="btn btn-ghost drop lg:hidden">
@@ -41,9 +42,11 @@ const Header = () => {
               </li>
             </ul>
           </div>
-          <a className="btn btn-ghost relative right-10 normal-case text-xl">daisyUI</a>
+          <a className="btn btn-ghost relative right-10 normal-case text-xl">
+            daisyUI
+          </a>
         </div>
-        <div className="navbar-end hidden lg:flex">
+        <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1">
             <li>
               <a>Home</a>
@@ -58,6 +61,12 @@ const Header = () => {
               <a>Contact</a>
             </li>
           </ul>
+        </div>
+        <div className="navbar-end ">
+         <div className="call">
+         <span className="me-2"><HiPhoneIncoming /></span>
+         <h1>50103382</h1>
+         </div>
         </div>
       </div>
     </div>
