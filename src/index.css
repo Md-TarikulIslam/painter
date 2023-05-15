@@ -15,3 +15,11 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+@font-face {
+  font-family: "Satoshi-Black";
+  src: local("Satoshi-Black"),
+   url("./font/Satoshi-Black.otf") format("truetype");
+  font-weight: 400;
+ }
+ 
