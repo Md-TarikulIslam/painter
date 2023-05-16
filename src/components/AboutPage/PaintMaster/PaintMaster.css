@@ -1,0 +1,76 @@
+.paint-bg {
+    background-color: rgb(249, 249, 249);
+    position: relative;
+    bottom: 400px;
+    padding: 100px 0;
+}
+
+.paint-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    padding: 100px;
+}
+
+.paint-card {
+
+    border-radius: 20px;
+    padding: 30px;
+}
+
+.paint-img {
+    margin: 0 auto;
+    width: 80%;
+
+}
+
+.description {
+
+    background-color: rgb(242, 104, 0);
+    height: 150px;
+    border-radius: 30px;
+    padding: 20px;
+}
+.painter-name{
+    color: white;
+    font-size: 20px;
+    text-align: center;
+}
+.job{
+    text-align: center;
+}
+.social-icons{
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 80px;
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+@media screen and (max-width:640px) {
+.paint-grid{
+
+    grid-template-columns: repeat(1,1fr);
+    padding: 20px;
+}
+}
+
+
+@media screen and (min-width:641px) and (max-width:768px) {
+
+    .paint-grid{
+
+        grid-template-columns: repeat(1,1fr);
+        padding: 20px;
+    }
+}
+
+@media screen and (min-width:769px) and (max-width:1024px) {
+
+    .paint-grid{
+
+        grid-template-columns: repeat(2,1fr);
+        padding: 20px;
+    }
+}

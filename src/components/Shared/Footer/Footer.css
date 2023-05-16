@@ -1,8 +1,8 @@
 .foo {
     background-color: #f38128;
-    /* height: 200px; */
     color: white;
     padding: 100px;
+    margin-top: 250px;
 }
 
 .foo-flex {

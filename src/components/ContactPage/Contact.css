@@ -1,0 +1,160 @@
+.breadcrumbs2 {
+    color: white;
+    margin-left: 765px;
+}
+.contact-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    padding: 100px 200px;
+}
+
+.contact-card {
+    padding: 30px;
+    border-radius: 30px;
+    box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
+}
+
+.contact-icon {
+
+    font-size: 60px;
+    width: 100px;
+    height: 100px;
+    /* padding: 20px; */
+    border-radius: 50%;
+    color: white;
+    background-color: rgb(242, 104, 0);
+    margin-left: 120px;
+    padding: 20px;
+}
+
+.contact-title {
+    margin-top: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    color: rgb(242, 104, 0);
+    font-size: 20px;
+}
+
+.contact-desc {
+    color: rgb(242, 104, 0);
+    text-align: center;
+}
+
+
+/* Form  */
+.form-pad {
+    padding: 100px;
+}
+
+.form-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+
+}
+
+.inputs,
+.textarea {
+    border-bottom: 3px solid rgb(242, 104, 0);
+    padding: 20px;
+    border-radius: 30px;
+    box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
+}
+
+.textarea {
+    margin-top: 50px;
+    width: 1485px;
+}
+
+.send-btn {
+    padding: 30px;
+    border-radius: 50px;
+    background-color: rgb(242, 104, 0);
+    color: white;
+    margin-top: 50px;
+    position: relative;
+    left: 690px;
+    font-size: 20px;
+}
+
+.map {
+    width: 100%;
+    height: 500px;
+}
+
+@media screen and (max-width:640px) {
+    .breadcrumbs2{
+        margin-left: 120px;
+    }
+    .contact-grid {
+        grid-template-columns: repeat(1, 1fr);
+        padding: 20px;
+    }
+
+    .contact-icon {
+        margin-left: 100px;
+    }
+
+    .form-pad {
+        padding: 20px;
+    }
+
+    .form-grid {
+        grid-template-columns: repeat(1, 1fr);
+
+    }
+
+    .textarea {
+        width: 350px;
+    }
+    .send-btn{
+        left: 0;
+    }
+}
+
+
+@media screen and (min-width:641px) and (max-width:768px) {
+    .breadcrumbs{
+        margin-left: 250px;
+    }
+    .contact-grid {
+        grid-template-columns: repeat(1, 1fr);
+        padding: 20px;
+    }
+    .contact-icon {
+        margin-left: 300px;
+    }
+
+    .form-pad {
+        padding: 20px;
+    }
+
+    .form-grid {
+        grid-template-columns: repeat(1, 1fr);
+
+    }
+
+    .textarea {
+        width: 720px;
+    }
+    .send-btn{
+        left: 0;
+    }
+
+}
+
+@media screen and (min-width:769px) and (max-width:1024px) {
+    .breadcrumbs{
+        margin-left: 430px;
+    }
+    .textarea{
+        width: 830px;
+    }
+    .contact-grid{
+        padding: 20px;
+    }
+    .send-btn{
+        left: 0;
+    }
+}

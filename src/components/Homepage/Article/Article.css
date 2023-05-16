@@ -20,7 +20,7 @@
 .article-card:hover {
     perspective: 1000px;
     transform-style: preserve-3d;
-    transform: translateZ(-10px) rotateX(-10deg) rotateY(-10deg);
+    transform: translateZ(0px) rotateX(0deg) rotateY(-360deg);
     transition: transform 0.5s ease-in-out;
 }
 

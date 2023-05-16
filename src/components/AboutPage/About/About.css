@@ -1,0 +1,149 @@
+.about-bg {
+    background-image: url('../../../images/About-Page/paint-header.jpg');
+    height: 330px;
+    background-repeat: no-repeat;
+
+}
+
+.about-text {
+    color: white;
+    text-align: center;
+    font-size: 45px;
+    padding-top: 100px;
+}
+
+.breadcrumbs {
+    color: white;
+    margin-left: 750px;
+}
+
+
+/* ..........................   */
+.about-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 100px;
+    padding: 0 100px;
+    position: relative;
+    bottom: 700px;
+
+}
+
+.maincontainer {
+    width: 302px;
+    height: 299px;
+    border-radius: 20px;
+    background-color: white;
+    box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
+}
+
+.image {
+    border-radius: 50px;
+    width: 100px;
+    padding: 15px;
+    background-color: rgb(242, 104, 0);
+
+    margin: 50px auto;
+
+}
+
+.back h2 {
+    position: absolute;
+    color: rgb(242, 104, 0);
+    font-size: 30px;
+    margin-top: 40px;
+    width: 300px;
+    text-align: center;
+
+}
+
+.back p {
+    padding: 20px;
+    position: absolute;
+    top: 100px;
+    font-size: 18px;
+    text-align: center;
+
+
+}
+
+.front h2 {
+    position: absolute;
+    padding: 10px;
+    top: 200px;
+    color: rgb(242, 104, 0);
+    font-size: 30px;
+    text-align: center;
+    width: 300px;
+
+
+}
+
+.maincontainer>.front {
+    position: absolute;
+    transform: perspective(600px) rotateY(0deg);
+    width: 302px;
+    height: 290px;
+    backface-visibility: hidden;
+    transition: transform .5s linear 0s;
+}
+
+.maincontainer>.back {
+    position: absolute;
+    transform: perspective(600px) rotateY(180deg);
+    background: #fff;
+    color: black;
+    width: 302px;
+    height: 290px;
+    border-radius: 10px;
+    padding: 5px;
+    backface-visibility: hidden;
+    transition: transform .5s linear 0s;
+
+}
+
+.maincontainer:hover>.front {
+    transform: perspective(600px) rotateY(-180deg);
+}
+
+.maincontainer:hover>.back {
+    transform: perspective(600px) rotateY(0deg);
+}
+
+@media screen and (max-width:640px) {
+    .about-grid{
+        grid-template-columns: repeat(1,1fr);
+        bottom: 500px;
+        padding: 50px;
+    }
+    .breadcrumbs{
+        margin-left: 100px;
+    }
+}
+
+
+
+
+@media screen and (min-width:641px) and (max-width:768px) {
+    .about-grid{
+        grid-template-columns: repeat(1,1fr);
+        bottom: 700px;
+        padding: 0 150px;
+    }
+    .breadcrumbs{
+        margin-left: 230px;
+    }
+
+}
+
+@media screen and (min-width:769px) and (max-width:1024px) {
+
+    .about-grid{
+        grid-template-columns: repeat(2,1fr);
+        bottom: 500px;
+        padding: 0 100px;
+    }
+    .breadcrumbs{
+        margin-left: 410px;
+    }
+}
